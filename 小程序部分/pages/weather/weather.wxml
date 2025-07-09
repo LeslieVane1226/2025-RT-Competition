@@ -1,0 +1,90 @@
+<view class="weather-container">
+  <view class="header">
+    <view class="city-info" bindtap="showRegionPicker">
+      <view class="left1">
+        <image class="city-map" src="/images/ditu.png"/>
+        <text class="city">{{name}}-{{city}}-{{provice}}</text>
+      </view>   
+      <text class="temperature">{{temp}}°</text>
+    </view>
+  </view>
+
+  <view class="status-card">
+    <view class="status-item">
+      <text class="label">当前天气</text>
+      <text class="value">{{weather}}</text>
+    </view>
+
+    <image class="weather-icon" src="/images/QWeather-Icons-1.1.0/1.1.0/icons/{{icon}}.svg" background-color="#eee" />
+
+    <view class="divider">
+    </view>
+
+    <view class="status-item">
+   
+      <text class="label">体感温度</text>
+      <text class="value">{{realFeel}}℃</text>
+    </view>
+
+    <image class="label-img" src="/images/tgwd.png"/>
+  </view>
+
+  <view class="weekly-forecast">
+    <view class="forecast-item" wx:for="{{weekly}}" wx:key="index">
+      <text class="week">{{item.week}}</text>
+      <!-- <text class="week1">{{item.fxDate}}</text> -->
+      <image class="forecast-icon" src="/images/QWeather-Icons-1.1.0/1.1.0/icons/{{item.iconDay}}.svg" />
+      <!-- <text class="forecast-temp">{{item.tempMin}}/{{item.tempMax}}℃</text> -->
+    </view>
+    <view class="container1">
+      <ec-canvas id="mychart-dom-pie1" canvas-id="mychart-pie1" ec="{{ ec1 }}"></ec-canvas>
+    </view>
+  </view>
+
+
+
+  <view class="indicator-grid">
+    <view class="indicator-card">
+      <view class="left">
+        <text class="indicator-title">能见度</text>
+        <view class="indicator-value">{{km}}km</view>
+      </view>
+      <image class="pic" src="/images/see.png" mode="" />
+    </view>
+
+    <view class="indicator-card">
+      <view class="left">
+        <text class="indicator-title">湿度</text>
+        <view class="indicator-value">{{humi}}%</view>
+      </view>
+      <image class="pic" src="/images/humi.png" mode="" />
+    </view>
+
+    <view class="indicator-card">
+      <view class="left">
+        <text class="indicator-title">风速</text>
+        <view class="indicator-value">{{speed}}km/h</view>
+      </view>
+      <image class="pic" src="/images/speed.png" mode="" />
+    </view>
+
+    <view class="indicator-card">
+      <view class="left">
+        <text class="indicator-title">风向</text>
+        <view class="indicator-value">{{scle}}</view>
+      </view>
+      <image class="pic" src="/images/scle.png" mode="" />
+    </view>
+  </view>
+
+  <view class="life-index">
+    <view class="index-title" style="padding-left: 30rpx;">生活指数</view>
+    <view class="index-grid">
+      <view class="index-item" wx:for="{{processedLifeIndex}}" wx:key="index">
+        <text class="index-name">{{item.name}}</text>
+        <text class="index-level">{{item.category}}</text>
+        <text class="index-desc">{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+</view>

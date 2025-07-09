@@ -1,0 +1,34 @@
+<!--index.wxml-->
+
+<view class="page-container">
+</view>
+
+<view wx:if="{{LightSwitch == 0}}"> 
+  <view class="data">
+    <view class="data-card">
+      <image class="data-card-icon" src="/static/safe.png" />
+      <view class="data-card-title1">
+        安全提示
+      </view>  
+      <view class="data-card-title2">
+          正常
+      </view> 
+    </view>
+  </view>
+</view>
+<view wx:if="{{LightSwitch == 1}}"> 
+  <view class="data">
+    <view class="data-card1">
+      <image class="data-card-icon" src="/static/safe.png" />
+      <view class="data-card-title1">
+        安全提示
+      </view>  
+      <view class="data-card-title2">
+        跌倒
+      </view> 
+    </view>
+  </view>
+</view>
+<view class="btn"> 
+  <van-button color="#3d7ef9" type="default" round size="large" bindtap="onCall" disabled="{{disabled}}">一键报警</van-button>
+</view>

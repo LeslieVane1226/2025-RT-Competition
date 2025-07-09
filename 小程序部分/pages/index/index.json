@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-button": "@vant/weapp/button/index"
+  },
+  "permission": {
+    "scope.makePhoneCall": {
+    "desc": "你的电话将用于拨打客服电话"
+    }
+  }
+}

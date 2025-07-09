@@ -1,0 +1,94 @@
+/**index.wxss**/
+page{
+  background-color: #f8f9fa;
+}
+.page-container{
+  padding: 36rpx;
+}
+.header{
+  background-color: #3d7ef9;
+  width: 90%;
+  height: 340rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+  margin-left: 5%;
+}
+.header image{
+  width: 100%;
+}
+.data{
+  margin-top: 36rpx;
+  margin-left: 24rpx;
+  margin-right: 24rpx;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 300rpx);
+  grid-gap: 36rpx;
+}
+.data .data-card{
+  background-color: rgb(71, 236, 5);
+  height: 240rpx;
+  width: 640rpx;
+  box-shadow: #d6d6d6 0 0 8rpx;
+  border-radius: 36rpx;
+  display: flex;
+}
+.data .data-card1{
+  background-color: rgb(236, 51, 5);
+  height: 240rpx;
+  width: 640rpx;
+  box-shadow: #d6d6d6 0 0 8rpx;
+  border-radius: 36rpx;
+  display: flex;
+}
+.data .data-card .data-card-icon{
+  height: 80rpx;
+  width: 80rpx;
+  margin-top: 24rpx;
+}
+.data .data-card .data-card-title2{
+  font-size: 56rpx;
+  font-weight: bold;
+  color: #f8f9fa;
+  margin-left: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.data .data-card .data-card-title1{
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #f8f9fa;
+  margin-top: 24rpx;
+  margin-left: 24rpx;
+  display: flex;
+  justify-content: center;
+}
+.data .data-card1 .data-card-icon{
+  height: 80rpx;
+  width: 80rpx;
+  margin-top: 24rpx;
+}
+.data .data-card1 .data-card-title2{
+  font-size: 56rpx;
+  font-weight: bold;
+  color: #f8f9fa;
+  margin-left: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.data .data-card1 .data-card-title1{
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #f8f9fa;
+  margin-top: 24rpx;
+  margin-left: 24rpx;
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  margin-top: 30rpx;
+  width: 640rpx;
+  margin-left: 60rpx;
+}

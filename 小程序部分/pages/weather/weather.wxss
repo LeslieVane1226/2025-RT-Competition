@@ -1,0 +1,256 @@
+.weather-container {
+    padding: 30rpx;
+    background: #e6e9f3;
+  }
+  
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40rpx;
+  }
+  .left1{
+      width:100%;
+      margin-left: 160rpx;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .city-map{
+    height: 22px;
+    width: 22px;
+    margin-right: 20rpx;
+  }
+
+  .city-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .temperature{
+    width: 200rpx;
+    height: 300rpx;
+  }
+  
+  .city {
+    font-size: 40rpx;
+    color: #2d3436;
+    font-weight: bold;
+    margin-right: 113px;
+  }
+  
+  .temperature {
+    font-size: 230rpx;
+    color: #31aee9;
+    margin-top: 15rpx;
+    transform: translateX(-20%);
+  }
+  
+  .weather-icon {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 24rpx;
+    margin-right: 20px;
+  }
+  
+  .status-card {
+    background: #fff;
+    border-radius: 20rpx;
+    padding: 40rpx;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.08);
+  }
+  
+  .status-item {
+    flex: 1;
+    transform: translateX(15%);
+  }
+  
+  .label-img{
+    height: 100rpx;
+    width: 100rpx;
+  }
+
+  .divider {
+    width: 2rpx;
+    background: rgb(209, 209, 209);
+    margin: 0 40rpx;
+    transform: translateX(-1000%);
+  }
+  
+  .label {
+    font-size: 28rpx;
+    color: #636e72;
+  }
+  
+  .value {
+    font-size: 36rpx;
+    color: #2d3436;
+    margin-top: 15rpx;
+    display: block;
+  }
+  
+  .indicator-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30rpx;
+  }
+  
+  .indicator-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 20rpx;
+    padding: 30rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.08);
+  }
+  
+  .indicator-title {
+    font-size: 28rpx;
+    color: #636e72;
+  }
+  
+  .indicator-value {
+    margin-top: 20rpx;
+    font-size: 40rpx;
+    color: #0984e3;
+  }
+  .pic{
+      width: 100rpx;
+      height: 100rpx;
+      border-radius: 20rpx;
+  }
+  .unit {
+    font-size: 24rpx;
+    color: #636e72;
+    margin-left: 10rpx;
+  }
+  
+  .weekly-forecast {
+    border-radius: 20rpx;
+    margin: 30rpx 0rpx 30rpx; 
+    padding: 20rpx 48rpx 0; 
+    box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.08);
+    height: 440rpx;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .life-index {
+    background: #fff;
+    border-radius: 20rpx;
+    margin: 30rpx 0 !important;
+    padding: 10rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.08);
+  }
+  
+  .forecast-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 65rpx;
+    height: 140rpx;
+    margin: 0 10rpx;
+  }
+  
+  .forecast-icon {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 25rpx 0 0;
+  }
+  
+  .life-index {
+    background: #fff;
+    border-radius: 20rpx;
+    margin: 30rpx;
+    padding: 30rpx 0;
+  }
+  
+  .index-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rpx;
+    padding: 0 30rpx;
+  }
+  
+  .index-item {
+    height: 260rpx;
+    padding: 20rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .index-icon {
+    width: 60rpx;
+    height: 60rpx;
+    margin-bottom: 15rpx;
+  }
+  
+  .index-content {
+    flex: 1;
+  }
+  .index-title {
+    font-size: 36rpx;
+    color: #2d3436;
+    margin-bottom: 30rpx;
+    font-weight: bold;
+  }
+  
+  .index-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30rpx;
+  }
+  
+  .index-item {
+    background: #f5f6fa;
+    border-radius: 16rpx;
+    padding: 30rpx;
+  }
+  
+  .index-name {
+    font-size: 28rpx;
+    color: #636e72;
+  }
+  
+  .index-level {
+    font-size: 32rpx;
+    color: #0984e3;
+    margin: 15rpx 0;
+    display: block;
+  }
+  
+  .index-desc {
+    font-size: 24rpx;
+    color: #636e72;
+    height: 130rpx;
+  }
+
+  #mychart-dom-pie1 {
+    width: 100% !important;
+  }
+
+.weekly-forecast {
+  position: relative;
+
+}
+
+.container1 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  width: 100%;
+  height: 280rpx;
+  z-index: 1;
+}
